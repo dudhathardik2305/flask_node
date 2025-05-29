@@ -46,6 +46,8 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         return redirect(url_for('dashboard'))
+    # if not form.validate_on_submit():
+    #     return render_template("login.html", popup_message="Invalid username or password.")
     return render_template('login.html', form=form)
 
 

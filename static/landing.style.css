@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-around;
   padding: 3rem 2rem;
-  background: #f5f5f5;
+  background: transparent;
 }
 
 .feature {
