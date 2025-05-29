@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+<div class="form-container">
+  <h2 class="form-title">Create Your Account</h2>
+  <form method="POST" class="form">
+    {{ form.hidden_tag() }}
+
+    <div class="form-field">
+      {{ form.username.label(class_="form-label") }}
+      {{ form.username(class_="form-input", placeholder="User Name") }}
+    </div>
+
+    <div class="form-field">
+      {{ form.email.label(class_="form-label") }}
+      {{ form.email(class_="form-input", placeholder="Email") }}
+    </div>
+
+    <div class="form-field password-field">
+      {{ form.password.label(class_="form-label") }}
+      {{ form.password(class_="form-input", id="password", placeholder="Password") }}
+      <span class="toggle-password" onclick="togglePassword()">👁️</span>
+    </div>
+
+    <div class="form-field">
+      {{ form.submit(class_="btn-submit") }}
+    </div>
+  </form>
+</div>
+{% endblock %}

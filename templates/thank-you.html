@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Thank You{% endblock %}
+
+{% block content %}
+<div class="thank-you-container">
+  <h2 class="thank-you-title">Thank You!</h2>
+  <p class="thank-you-message">Your submission has been received successfully.</p>
+  <a href="{{ url_for('login') }}" class="btn-submit">Return to Home</a>
+</div>
+{% endblock %}

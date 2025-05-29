@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<section class="about-section">
+  <h2>About Villa Construction Co.</h2>
+  <p>We are a trusted construction company committed to quality, safety, and sustainability. With over a decade of experience, our team delivers commercial, residential, and infrastructure projects that stand the test of time.</p>
+  
+  <div class="about-features">
+    <div class="feature-card">
+      <h3>Our Mission</h3>
+      <p>To build better, safer, and smarter environments through innovation, craftsmanship, and trust.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Our Team</h3>
+      <p>We are a diverse team of engineers, architects, and visionaries working together with one goal — excellence.</p>
+    </div>
+    <div class="feature-card">
+      <h3>What We Do</h3>
+      <p>We specialize in real estate, design-build services, infrastructure development, and turnkey project execution.</p>
+    </div>
+  </div>
+
+  <h3>Visit Us</h3>
+  <div class="map-container">
+    <iframe
+	  src="https://maps.google.com/maps?q=21.1702,72.8311&z=15&output=embed"
+	  width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+	</iframe>
+  </div>
+</section>
+{% endblock %}

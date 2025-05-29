@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Vid Share{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Vid Share</h1>
+        <p>Upload, share, and explore amazing videos across the globe.</p>
+        <a href="{{ url_for('signup') }}" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h3>Secure Uploads</h3>
+        <p>We keep your videos safe and secure with encrypted cloud storage.</p>
+    </div>
+    <div class="feature">
+        <h3>Community Driven</h3>
+        <p>Discover videos curated by our vibrant community of creators.</p>
+    </div>
+    <div class="feature">
+        <h3>Lightning Fast</h3>
+        <p>Experience blazing-fast uploads and playback, powered by modern tech.</p>
+    </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>SPIDER-MAN</h3>
+    <iframe width="100%" height="200"
+            src="https://www.youtube.com/embed/byh_26ZYT8w"
+            frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="feature">
+    <h3>BATMAN</h3>
+    <iframe width="100%" height="200"
+            src="https://www.youtube.com/embed/EXeTwQWrcwY"
+            frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="feature">
+    <h3>IRON MAN</h3>
+    <iframe width="100%" height="200"
+            src="https://www.youtube.com/embed/8ugaeA-nMTc"
+            frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="cta">
+    <h2>Join Vid Share today</h2>
+    <p>Sign up and start sharing your content with the world.</p>
+    <a href="{{ url_for('signup') }}" class="btn">Sign Up Now</a>
+</section>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Vid Share{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='landing.style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='thank-you.style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='navbar.style.css') }}">
+</head>
+<body>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+    <header>
+      <nav class="navbar">
+        <div class="navbar-brand">Vid Share</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li><a href="{{ url_for('signup') }}">SignUp</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Villa Construction Co. All rights reserved.</p>
+    </footer>
+</body>
+</html>
